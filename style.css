@@ -1,44 +1,62 @@
+/*روت  شبیه * است اما تفاوت جزئی دارند*/
+:root{
+    /*این ویژگی بهتر است که در اینجا قرار بگیرد*/
+    box-sizing: border-box;/*بوردر را داخل عرض و ارتفاع قرار میدهد و باعث جلوگیری افزایش عرض و ارتفاع میشود*/
+
+}
+
 body{
     font-family: sans-serif;
-    font-size: 14px;
-    
-    
+    font-size: 14px; 
+    display: flex;
+    justify-content: center;
 }
+
+
 
 .container{
-    position: fixed;
+    display: flex;
+    justify-content: center;
     width: 400px;
     height: 650px;
-    margin-left: 500px;
     border: 2px solid lightgray;
     box-shadow: 3px 8px 5px 3px #cccccc;
-   
+    display: flex; /*تگ های دورن کانتینر را کنار هم قرار میدهد*/
+    flex-direction: column; /*فلکس به صورت پیش فرض سطری مرتب میکند برای همین تعیین میکنیم که ستونی کنار هم قرار دهد*/
+    align-items: center;
     
 }
 
-.container .header-h1{
-    margin-left: 20px;
+.container .container-header-h1{
+
+    margin-right: 200px;
     font-weight: 900;
+    
 }
 
 
-.container .picture{
-    margin-left: 10px;
-    margin-right: 10px;
+.container-picture{
+    width:380px;
+    height:300px;
+   
+   
 }
 
-/*margin and padding should be edit*/
+
+
 .container .describe{
+  
     border: 2px solid lightgray;
-    margin-left: 8px;
-    margin-right: 7px;
+    margin: 7px 7px 7px 7px; /*top right bottom left*/
     padding-left: 16px;
     padding-right: 7px;
+    box-sizing: border-box;
 }
 
 
 .container .describe .describe-second-paragraph .describe-label-titr{
     font-weight: 900;
+    
 }
 
 .container .describe .describe-first-paragraph{
